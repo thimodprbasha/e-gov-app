@@ -7,6 +7,7 @@ const String URL_GET_COMPLAIN = BASE_URL + "api/user/gov/complains";
 const String URL_SHARE_COMPLAIN = BASE_URL + "api/user/gov/share_complain";
 const String URL_FEEDBACK_APPROVE_COMPLAIN = BASE_URL + "api/user/gov/approve";
 const String URL_FEEDBACK_COMPLAIN = BASE_URL + "api/user/supervisor/feedback/";
+const String ULR_GENERTAE_REPORT = BASE_URL + "api/user/gov/generate_report";
 
 const String CITIZEN = "ROLE_CITIZEN";
 const String GOV_WORKER = "ROLE_GOV_WORKER";

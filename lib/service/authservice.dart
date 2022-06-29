@@ -25,11 +25,7 @@ class AuthenticationService {
     String userJson = user.toJson();
 
     Response response = await post(url , body: userJson , headers: {"Content-Type": "application/json"});
-    // if (response.statusCode == 200) {
-    //   return "ok";
-    // } else {
-    //   return response.body;
-    // }
-     return response;
+   
+    return response;
   }
 }

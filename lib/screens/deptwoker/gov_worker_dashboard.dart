@@ -1,11 +1,9 @@
-import 'package:e_gov/screens/deptwoker/complain_feedback.dart';
 import 'package:e_gov/screens/deptwoker/complains.dart';
 import 'package:e_gov/screens/deptwoker/feedback.dart';
+import 'package:e_gov/screens/deptwoker/report.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:e_gov/env/env.dart';
-import 'package:e_gov/screens/deptwoker/feedback.dart';
-
 import '../../widgets/nav_drawer.dart';
 
 class GovWorkerDashBoard extends StatefulWidget {
@@ -34,18 +32,18 @@ class GovWorkerDashBoardState extends State<GovWorkerDashBoard> {
               preferredSize:  const Size(0, 60.0),
               child: TabBar(
                   indicatorColor: Colors.white,
-                  labelStyle: TextStyle(fontSize: 9.5,fontFamily: 'Family Name'),  //For Selected tab
-                  unselectedLabelStyle: TextStyle(fontSize: 8.0,fontFamily: 'Family Name'), //For Un-selected Tabs/For Un-selected Tabs
+                  labelStyle: const TextStyle(fontSize: 9.5,fontFamily: 'Family Name'),  //For Selected tab
+                  unselectedLabelStyle: const TextStyle(fontSize: 8.0,fontFamily: 'Family Name'), //For Un-selected Tabs/For Un-selected Tabs
                   tabs: tabsList
               ),
             ),
 
           ),
-          body: TabBarView(
+          body:  const TabBarView(
             children: [
-               const Complains(),
-              const FeedbackComplains(),
-              Container(),
+               Complains(),
+               FeedbackComplains(),
+               Report()
             ],
           ),
         ),

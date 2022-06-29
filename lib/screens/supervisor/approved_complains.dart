@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../../model/complain.dart';
 import '../../service/complain_service.dart';
+import '../../widgets/spinner.dart';
 
 class ApprovedComplains extends StatefulWidget {
   const ApprovedComplains({Key? key}) : super(key: key);
@@ -44,7 +45,12 @@ class _ApprovedComplainsState extends State<ApprovedComplains> {
             )).toList()
         );
       } else {
-        return  Container();
+        return const Spinner(
+              backgroundColor: Colors.white,
+              spinkitColor: Colors.black,
+              spinnerSize: 20.0,
+              spinnerUI: false,
+            );
       }
     }
     );

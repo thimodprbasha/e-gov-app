@@ -62,7 +62,12 @@ class _ComplainsState extends State<Complains> {
           )).toList()
           );
         } else {
-          return  Container();
+          return const Spinner(
+              backgroundColor: Colors.white,
+              spinkitColor: Colors.black,
+              spinnerSize: 20.0,
+              spinnerUI: false,
+            );
          }
       }
     );

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../../model/complain.dart';
 import '../../service/complain_service.dart';
+import '../../widgets/spinner.dart';
 
 class FeedbackComplains extends StatefulWidget {
   const FeedbackComplains({Key? key}) : super(key: key);
@@ -54,7 +55,12 @@ class _FeedbackComplainsState extends State<FeedbackComplains> {
             )).toList()
         );
       } else {
-        return  Container();
+        return const Spinner(
+              backgroundColor: Colors.white,
+              spinkitColor: Colors.black,
+              spinnerSize: 20.0,
+              spinnerUI: false,
+            );
       }
     }
     );
